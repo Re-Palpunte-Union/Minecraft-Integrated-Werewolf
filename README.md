@@ -1,6 +1,7 @@
 ## 統合人狼
 # 参考にさせてもらったデータパック
 
+| :---: | ---- |
 | [Minecraft Werewolf](https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese) |
 | 製作者 | [きざはしるか](https://twitter.com/KizahashiLuca?s=20) |
 | [OhMyDat](https://github.com/Ai-Akaishi/OhMyDat) |
