@@ -4,17 +4,17 @@
 
 | [TheOtherRoles-GM](https://github.com/yukinogatari/TheOtherRoles-GM) | [人狼ジャッジメント](https://www.sorairo.jp/jrvs.html) | [TownOfMoss](https://github.com/Koke1024/Town-Of-Moss) | [TownOfHost](https://github.com/tukasa0001/TownOfHost) |
 | ---------------- | --------- | ---------- | ---------- |
-| [シェリフ](https://github.com/yukinogatari/TheOtherRoles-GM#sheriff) | [生霊](https://www.sorairo.jp/jrvs.html) | [タイムロード](https://github.com/Koke1024/Town-Of-Moss#TimeLord) | [サイドキック](https://github.com/tukasa0001/TownOfHost#sidekick%E7%9B%B8%E6%A3%92) |
-| [ゲッサー](https://github.com/yukinogatari/TheOtherRoles-GM#guesser) |  | [ドールメーカー](https://github.com/Koke1024/Town-Of-Moss#DollMaker) |  |
-| [弁護士](https://github.com/yukinogatari/TheOtherRoles-GM#lawyer) |  |  |  |
-| [追跡者](https://github.com/yukinogatari/TheOtherRoles-GM#pursuer) |  |  |  |
-| [アーソニスト](https://github.com/yukinogatari/TheOtherRoles-GM#arsonist) |  |  |  |
-| [スパイ](https://github.com/yukinogatari/TheOtherRoles-GM-GM#spy) |  |  |  |
-| [クリーナー](https://github.com/yukinogatari/TheOtherRoles-GM#cleaner) |  |  |  |
-| [ヴァンパイア](https://github.com/yukinogatari/TheOtherRoles-GM#vampire) |  |  |  |
-| [ジェスター](https://github.com/yukinogatari/TheOtherRoles-GM#jester) |  |  |
-| [ペスト医師](https://github.com/yukinogatari/TheOtherRoles-GM#plague-doctor) |  |  |
-| [恋人](https://github.com/yukinogatari/TheOtherRoles-GM#lovers) |  |  |  |
+| [シェリフ](https://github.com/yukinogatari/TheOtherRoles-GM#sheriff)(村人) | [生霊](https://www.sorairo.jp/jrvs.html)(村人) | [タイムロード](https://github.com/Koke1024/Town-Of-Moss#TimeLord)(村人) | [サイドキック](https://github.com/tukasa0001/TownOfHost#sidekick%E7%9B%B8%E6%A3%92)(人狼) |
+| [ゲッサー](https://github.com/yukinogatari/TheOtherRoles-GM#guesser)(村人or人狼) |  | [ドールメーカー](https://github.com/Koke1024/Town-Of-Moss#DollMaker)(人狼) |  |
+| [弁護士](https://github.com/yukinogatari/TheOtherRoles-GM#lawyer)(第三) |  |  |  |
+| [追跡者](https://github.com/yukinogatari/TheOtherRoles-GM#pursuer)(第三) |  |  |  |
+| [アーソニスト](https://github.com/yukinogatari/TheOtherRoles-GM#arsonist)(第三) |  |  |  |
+| [スパイ](https://github.com/yukinogatari/TheOtherRoles-GM-GM#spy)(村人) |  |  |  |
+| [クリーナー](https://github.com/yukinogatari/TheOtherRoles-GM#cleaner)(人狼) |  |  |  |
+| [ヴァンパイア](https://github.com/yukinogatari/TheOtherRoles-GM#vampire)(人狼) |  |  |  |
+| [ジェスター](https://github.com/yukinogatari/TheOtherRoles-GM#jester)(第三) |  |  |
+| [ペスト医師](https://github.com/yukinogatari/TheOtherRoles-GM#plague-doctor)(第三) |  |  |
+| [恋人](https://github.com/yukinogatari/TheOtherRoles-GM#lovers)(恋人) |  |  |  |
 
 # 参考にさせてもらったデータパック
 
