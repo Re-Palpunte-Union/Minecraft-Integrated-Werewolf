@@ -1,0 +1,33 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": [
+                  [
+                    {
+                      "text": "死体を消す",
+                      "italic": false,
+                      "bold": true,
+                      "color": "dark_red"
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:10}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

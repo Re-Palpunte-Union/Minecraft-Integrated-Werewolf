@@ -1,0 +1,34 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name":[
+                        [{"text":"ナイスゲッサー","bold": true,"color": "#ffff00","italic": false}]
+                    ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:-1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
+              },{
+                "function":"minecraft:set_lore",
+                "lore": [
+                  [{"text":"村人陣営","italic":false,"color":"green"}],
+                    [{"text":"一人の役職を推測することができる","italic":false,"color":"white"}],
+                    [{"text":"相手が推測した役職であれば相手が死に、","italic":false,"color":"yellow","underlined":true}],
+                      [{"text":"  ","italic":false,"color":"white"},{"text":"推測した役職でなければ自分が死ぬ","italic":false,"color":"red","underlined": true}]
+                ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

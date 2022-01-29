@@ -1,0 +1,32 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name":[
+                        [{"text":"恋人","bold": true,"color": "#e839b9","italic": false}]
+                    ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:-1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
+              },{
+                "function":"minecraft:set_lore",
+                "lore": [
+                  [{"text":"恋人陣営","italic":false,"color":"#e839b9"}],
+                  [{"text":"恋人以外の陣営カウントが存在するプレイヤーを全員殺すと勝利する","italic":false,"color":"white"}]
+                ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }
