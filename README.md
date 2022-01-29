@@ -1,8 +1,8 @@
 ## 統合人狼
 
 # 役職
-| 元ネタ |  |  |  |
-| --- |  |  |  |
+| 元ネタ |   |   |   |
+| --- | - | - | - |
 | [TheOtherRoles-GM](https://github.com/yukinogatari/TheOtherRoles-GM) | [人狼ジャッジメント](https://www.sorairo.jp/jrvs.html) | [TownOfMoss](https://github.com/Koke1024/Town-Of-Moss) | [TownOfHost](https://github.com/tukasa0001/TownOfHost) |
 | [シェリフ](https://github.com/yukinogatari/TheOtherRoles-GM#sheriff) | [生霊](https://www.sorairo.jp/jrvs.html) | [タイムロード](https://github.com/Koke1024/Town-Of-Moss#TimeLord) | [サイドキック](https://github.com/tukasa0001/TownOfHost#sidekick%E7%9B%B8%E6%A3%92) |
 | [ゲッサー](https://github.com/yukinogatari/TheOtherRoles-GM#guesser) |  | [ドールメーカー](https://github.com/Koke1024/Town-Of-Moss#DollMaker) |  |
