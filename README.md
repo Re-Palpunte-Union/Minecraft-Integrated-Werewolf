@@ -1,6 +1,6 @@
 ## 統合人狼
 
-# 元ネタ
+# 役職の元ネタ
 
 | [TheOtherRoles-GM](https://github.com/yukinogatari/TheOtherRoles-GM) | [人狼ジャッジメント](https://www.sorairo.jp/jrvs.html) | [TownOfMoss](https://github.com/Koke1024/Town-Of-Moss) | [TownOfHost](https://github.com/tukasa0001/TownOfHost) |
 | ---------------- | --------- | ---------- | ---------- |
