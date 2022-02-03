@@ -24,7 +24,8 @@
                   [{"text":"プレイヤーを蠟人形にするボタンを持つ人狼","italic":false,"color":"white"}],
                   [{"text":"蝋人形は移動およびキルを行うことができなくなる","italic":false,"color":"white"}],
                   [{"text":"  蠟人形はドールメーカー以外が近づくか45秒経過すると死亡する","italic":false,"color":"white"}],
-                    [{"text":"弓矢でのキルを行うことができない","italic":false,"color":"red","underlined": true}]
+                    [{"text":"弓矢でのキルを行うことができない","italic":false,"color":"red","underlined": true}],
+                    [{"text":"能力で殺してもペスト医師を殺すと感染する","italic":false,"color":"#ffc000","underlined": true}]
                 ]
             }
             ]

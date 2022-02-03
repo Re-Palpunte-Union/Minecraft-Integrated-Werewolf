@@ -30,12 +30,13 @@ execute if data storage datapack:server {mawSettings:{"Jester":1b}} run scoreboa
 execute if data storage datapack:server {mawSettings:{"Arsonist":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 10
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 17
 execute if data storage datapack:server {mawSettings:{"TimeLoad":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 11
+execute if data storage datapack:server {mawSettings:{"Sheriff":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 6
+#execute if data storage datapack:server {mawSettings:{"PlankBoy":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 19
 execute if data storage datapack:server {mawSettings:{"Guesser":0b}} if score #maw EvilGuesser matches 0 run scoreboard players set @a[sort=random,limit=2,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if data storage datapack:server {mawSettings:{"Guesser":1b}} if score #maw EvilGuesser matches 0 if score #maw BothGuesser matches 0 run scoreboard players set @a[sort=random,limit=2,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if data storage datapack:server {mawSettings:{"Guesser":1b}} if score #maw EvilGuesser matches 1 if score #maw BothGuesser matches 0 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if data storage datapack:server {mawSettings:{"Guesser":1b}} if score #maw BothGuesser matches 1 run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if score #maw PlayerNumber matches 10.. run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
-execute if data storage datapack:server {mawSettings:{"Sheriff":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 6
 execute if data storage datapack:server {mawSettings:{"DollMaker":0b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 2
 execute if data storage datapack:server {mawSettings:{"Seer":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 3
 scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 4

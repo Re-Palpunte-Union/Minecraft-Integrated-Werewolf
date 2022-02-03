@@ -18,6 +18,7 @@ scoreboard objectives remove TeamVillager
 scoreboard objectives remove WerewolfBook
 scoreboard objectives remove UsedBow
 scoreboard objectives remove UsedLPotion
+scoreboard objectives remove RoleDone
 
 scoreboard objectives remove medium
 scoreboard objectives remove seer

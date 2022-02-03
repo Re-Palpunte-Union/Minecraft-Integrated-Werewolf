@@ -22,7 +22,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:30000}],Damage:2031,CustomModelData:5}"
+              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:255}],Damage:2031,CustomModelData:5,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:100,Operation:0,UUID:[I;-729562970,2040284999,-1238088349,1574605130],Slot:\"mainhand\"}]}"
             }
           ]
         }

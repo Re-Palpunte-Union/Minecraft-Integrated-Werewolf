@@ -23,7 +23,8 @@
                   [{"text":"村人陣営","italic":false,"color":"green"}],
                     [{"text":"人狼を殺せる能力を持つ","italic":false,"color":"white"}],
                     [{"text":"人狼以外をキルすると自身が死んでしまう","italic":false,"color":"white"}],
-                    [{"text":"オプションで狂人や第三陣営をキルすることもできる","italic":false,"color":"white"}]
+                    [{"text":"オプションで狂人や第三陣営をキルすることもできる","italic":false,"color":"white"}],
+                    [{"text":"能力で殺してもペスト医師を殺すと感染する","italic":false,"color":"#ffc000","underlined": true}]
                 ]
             }
             ]

@@ -1,3 +1,6 @@
+#ペスト医師
+scoreboard players set #maw InfectCount 100
+
 tag @a[scores={CurrentRole=9}] add Lawyer
 
 execute unless entity @a[scores={CurrentRole=9,DeathCount=0,Pursuer=1}] run title @a title {"text":"人狼陣営の勝利","color": "red"}

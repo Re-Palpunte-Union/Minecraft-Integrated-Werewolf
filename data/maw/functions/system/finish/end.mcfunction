@@ -29,3 +29,5 @@ function maw:system/finish/remove/entities
 function maw:system/finish/rebirth_gamerule
 function maw:system/finish/remove/bossbar
 function maw:system/finish/remove/tag
+
+scoreboard players set #Neutrals mawSettings 0

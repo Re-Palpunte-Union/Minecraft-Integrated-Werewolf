@@ -20,6 +20,6 @@
 
 | 製作者様 | データパック | ライセンス |
 | ---- | ---- | ----- |
-| [きざはしるか](https://twitter.com/KizahashiLuca?s=20)氏 | [Minecraft Werewolf](https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese) | [BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) |
+| [きざはしるか](https://twitter.com/KizahashiLuca?s=20)氏 | [Minecraft Werewolf](https://github.com/KizahashiLuca/minecraft_werewolf_light_japanese) | [CC-BY-4.0 License](https://creativecommons.org/licenses/by-sa/4.0/deed.ja) |
 | [赤石愛](https://twitter.com/AiAkaishi?s=20)氏 | [OhMyDat](https://github.com/Ai-Akaishi/OhMyDat) | [MIT Licence](https://opensource.org/licenses/mit-license.php) |
 | [いろは丸](https://twitter.com/irohamaru3?s=20)氏 | [RewindRespawn](https://github.com/Irohamaru/RewindRespawn) | [MIT Licence](https://opensource.org/licenses/mit-license.php) |

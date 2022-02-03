@@ -1,3 +1,6 @@
+#ペスト医師
+scoreboard players set #maw InfectCount 100
+
 title @a title {"text":"420 BLAZE IT","color": "#ee702e"}
 execute at @a[tag=Douse] run particle flame ~ ~ ~ 2 2 2 0.1 1000
 tag @s remove Douse

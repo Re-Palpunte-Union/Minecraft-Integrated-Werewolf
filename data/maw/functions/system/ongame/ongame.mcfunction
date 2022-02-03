@@ -2,7 +2,7 @@
 ### 矢のパーティクル
 execute if entity @a[tag=EnableArrowParticle] as @e[type=minecraft:arrow,nbt={inGround:false,crit:0b}] run data modify entity @s crit set value 1b
 ### 弓矢無効化
-execute at @a[scores={UsedBow=1..},tag=DisableBow] as @e[type=arrow,nbt={inGround:false},distance=..10,limit=1,sort=nearest] run data modify entity @s damage set value 1
+execute at @a[scores={UsedBow=1..},tag=DisableBow] positioned ^ ^ ^0.3 as @e[type=arrow,nbt={inGround:false},limit=1,sort=nearest] run data modify entity @s damage set value 0.5
 ### アイテムキル
 kill @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:5}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
@@ -22,6 +22,10 @@ effect give @a[scores={DeathCount=1..}] invisibility 1 0 true
 execute at @a[scores={Lovers=1..2,DeathCount=0}] run particle dust 0.8 0 1 1 ~ ~2.3 ~ 0 0 0 0 5 force @a[scores={DeathCount=2..}]
 #依頼人表示(Client)
 execute at @a[scores={Client=1,DeathCount=0}] run particle dust 0.459 0.761 0.212 1 ~ ~2 ~ 0 0 0 0 5 force @a[scores={DeathCount=2..}]
+#油だらけの人表示(Douse)
+execute at @a[scores={DeathCount=0},tag=Douse] run particle dust 1 0.569 0 1 ~ ~2.6 ~ 0.2 0.2 0.2 0 10 force @a[scores={DeathCount=2..}]
+#感染者表示(Infect)
+execute at @a[scores={DeathCount=0},tag=Infect,tag=!PlagueDoctor] run particle dust 1 0.816 0 1 ~ ~1 ~ 0.2 0.2 0.2 0 10 force @a[scores={DeathCount=2..}]
 
 ### 勝利判定
 execute if score #maw WolfCount matches ..0 if score #maw VillageCount matches 1.. if score #maw LoversCount matches ..0 run function maw:system/finish/winner/villager
@@ -29,32 +33,7 @@ execute if score #maw VillageCount matches ..0 if score #maw WolfCount matches 1
 execute if score #maw VillageCount matches ..0 if score #maw WolfCount matches ..0 if score #maw LoversCount matches 1.. run function maw:system/finish/winner/lovers
 execute if score #maw VillageCount matches ..0 if score #maw WolfCount matches ..0 if score #maw LoversCount matches ..0 run function maw:system/finish/winner/draw
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:3}}},scores={CurrentRole=10,UsedCStick=1..},limit=1] run function maw:system/ongame/role/arsonist/ignite
-execute unless entity @a[tag=!Infect,tag=!PlagueDoctor,scores={DeathCount=0}] if score #maw InfectCount matches ..0 run function maw:system/finish/winner/plague_doctor
-
-### 死亡時の処理
-#execute as @a[scores={DeathCount=1}] at @s run spawnpoint @s
-execute if entity @a[scores={DeathCount=1,Lovers=1..}] as @a[scores={DeathCount=0,Lovers=1..}] run function maw:system/ongame/role/lovers/death
-execute as @a[scores={DeathCount=1,Phantom=100}] run function maw:system/ongame/role/phantom/phantom
-execute as @a[scores={DeathCount=1},tag=Doll] run function maw:system/ongame/role/dollmaker/kill
-execute at @a[scores={DeathCount=1}] run summon armor_stand ~ ~ ~ {Marker:1,Tags:["Corpses"],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{id:"minecraft:leather_leggings",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{}],NoBasePlate:true,ShowArms:true}
-execute as @a[scores={DeathCount=1}] at @s run loot replace entity @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] armor.head loot maw:item/head_copy
-execute as @a[scores={DeathCount=1}] at @s run scoreboard players operation @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] PlayerNumber = @s PlayerNumber
-execute as @a[scores={DeathCount=1}] at @s run tp @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] @s
-execute as @a[scores={DeathCount=1}] run gamemode spectator @s
-execute if entity @a[scores={DeathCount=1,Client=1}] run tellraw @a[scores={CurrentRole=9,Pursuer=0}] [{"text":"[通達] ","color": "green"},{"text":"依頼人が死亡しました","color": "white","bold": false}]
-execute if entity @a[scores={DeathCount=1,Client=1}] run clear @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] written_book
-execute if entity @a[scores={DeathCount=1,Client=1}] run loot give @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] loot maw:item/books/pursuer
-execute if entity @a[scores={DeathCount=1,Client=1}] run loot replace entity @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] inventory.8 loot maw:item/lore/neutral/pursuer
-execute if entity @a[scores={DeathCount=1,Client=1}] run scoreboard players set @a[scores={CurrentRole=9,Pursuer=0}] Pursuer 1
-execute as @a[scores={DeathCount=1,TeamWerewolf=1,Lovers=0}] run scoreboard players remove #maw WolfCount 1
-execute as @a[scores={DeathCount=1,TeamVillager=1,Lovers=0}] run scoreboard players remove #maw VillageCount 1
-execute as @a[scores={DeathCount=1,Lovers=1..}] run scoreboard players remove #maw LoversCount 1
-execute as @a[scores={DeathCount=1},tag=!Douse] run scoreboard players remove #maw DouseCount 1
-execute as @a[scores={DeathCount=1},tag=!Infect,tag=!PlagueDoctor] run scoreboard players remove #maw InfectCount 1
-execute if entity @a[scores={TeamVillager=1..,KillCount=1..}] as @a[scores={DeathCount=1,CurrentRole=16}] run function maw:system/finish/winner/jester
-execute as @a[scores={KillCount=1..}] if entity @a[scores={DeathCount=1,CurrentRole=17}] run function maw:system/ongame/role/plague_doctor/infect
-execute if score #maw WolfCount matches 1.. if score #maw VillageCount matches 1.. as @a[scores={DeathCount=1},tag=Result] run function maw:system/finish/result
-execute as @a[scores={DeathCount=1}] run scoreboard players set @s DeathCount 2
+execute unless entity @a[tag=!Infect,tag=!PlagueDoctor,scores={DeathCount=0}] if score #maw InfectCount matches 0 run function maw:system/finish/winner/plague_doctor
 
 ### 死体
 execute as @e[type=armor_stand,tag=Corpses] run scoreboard players add @s Corpses 1
@@ -89,6 +68,10 @@ execute as @a[tag=Doll,scores={DollMaker=0..900,UsedBow=1..}] at @s run kill @e[
 
 execute as @a[tag=Doll,scores={DollMaker=900..}] run function maw:system/ongame/role/dollmaker/kill
 execute as @a[tag=Doll,scores={DeathCount=0}] at @s if entity @a[tag=!Doll,scores={DollMaker=0,DeathCount=0},distance=..4] run function maw:system/ongame/role/dollmaker/kill
+
+execute if score #maw VillageCount matches ..1 if score #maw LoversCount matches ..0 as @a[tag=Doll,scores={DeathCount=0,TeamVillager=1}] run function maw:system/ongame/role/dollmaker/kill
+execute if score #maw VillageCount matches ..0 if score #maw LoversCount matches 2 as @a[tag=Doll,scores={DeathCount=0,TeamVillager=1}] run function maw:system/ongame/role/dollmaker/kill
+
 #狂人の任命
 #任命対象の表示
 execute at @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:9}}},scores={CurrentRole=12,DollMaker=1}] as @a[sort=nearest,limit=1,distance=1..5,scores={DeathCount=0},tag=!Doll] run title @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:9}}},scores={CurrentRole=12,DollMaker=1}] actionbar [{"text":"任命対象  :  ","bold":true},{"selector":"@s","color":"light_purple"}]
@@ -140,7 +123,6 @@ function maw:system/ongame/role/timeload/main
 ### ゲッサー(8)
 scoreboard players enable @a[scores={CurrentRole=8,RoleDone=0}] ShowTargets
 
-#unless score @a[scores={PlayerNumber=1},limit=1] PlayerNumber = @s PlayerNumber 
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=1}] unless score @a[scores={PlayerNumber=1},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"\n%s  -->  %s","with":[{"selector":"@a[scores={PlayerNumber=1}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 1"}}]}]
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=2}] unless score @a[scores={PlayerNumber=2},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"%s  -->  %s","with":[{"selector":"@a[scores={PlayerNumber=2}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 2"}}]}]
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=3}] unless score @a[scores={PlayerNumber=3},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"%s  -->  %s","with":[{"selector":"@a[scores={PlayerNumber=3}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 3"}}]}]
@@ -157,8 +139,6 @@ execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=14}] unless score @a[scores={PlayerNumber=14},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"%s  -->  %s","with":[{"selector":"@a[scores={PlayerNumber=14}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 14"}}]}]
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=15}] unless score @a[scores={PlayerNumber=15},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"%s  -->  %s","with":[{"selector":"@a[scores={PlayerNumber=15}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 15"}}]}]
 execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] if entity @a[scores={PlayerNumber=16}] unless score @a[scores={PlayerNumber=16},limit=1] PlayerNumber = @s PlayerNumber run tellraw @s [{"translate":"%s  -->  %s\n","with":[{"selector":"@a[scores={PlayerNumber=16}]"},{"text":"推測する","color":"blue","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger Guess set 16"}}]}]
-
-clear @a[scores={ShowTargets=1..}] written_book{CustomModelData:5,title:"ゲッサーの能力本"} 1
 
 function maw:system/ongame/role/guesser/main
 
@@ -183,7 +163,35 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{CustomMod
 execute as @a[nbt={SelectedItem:{id:"minecraft:written_book",tag:{CustomModelData:5}}},scores={CurrentRole=17,DeathCount=0}] run title @s actionbar [{"translate":"感染者 : %s (残り : %s)","with":[{"selector":"@a[scores={DeathCount=0},tag=Infect,tag=!PlagueDoctor]","color":"#ffc000"},{"selector":"@a[scores={DeathCount=0},tag=!Infect,tag=!PlagueDoctor]","color":"#ffc000"}],"bold":true}]
 
 execute as @a[tag=!Infect,tag=!PlagueDoctor,scores={DeathCount=0,InfectCount=100..}] run function maw:system/ongame/role/plague_doctor/infect
-execute at @a[tag=Infect,scores={DeathCount=0}] as @a[tag=!Infect,tag=!PlagueDoctor,scores={DeathCount=0,InfectCount=0..100},distance=..5] run function maw:system/ongame/role/plague_doctor/add_infect
+execute at @a[tag=Infect,scores={DeathCount=0}] as @a[tag=!Infect,tag=!PlagueDoctor,scores={DeathCount=0,InfectCount=0..100},distance=..7] run function maw:system/ongame/role/plague_doctor/add_infect
+
+#感染者表示(Infect)
+execute at @a[scores={DeathCount=0},tag=Infect,tag=!PlagueDoctor] run particle dust 1 0.816 0 1 ~ ~1 ~ 0.2 0.2 0.2 0 10 force @a[scores={CurrentRole=17,DeathCount=0},tag=PlagueDoctor]
+
+### 死亡時の処理
+#execute as @a[scores={DeathCount=1}] at @s run spawnpoint @s
+execute if entity @a[scores={DeathCount=1,Lovers=1..}] as @a[scores={DeathCount=0,Lovers=1..}] run function maw:system/ongame/role/lovers/death
+execute as @a[scores={DeathCount=1,Phantom=100}] run function maw:system/ongame/role/phantom/phantom
+execute as @a[scores={DeathCount=1},tag=Doll] run function maw:system/ongame/role/dollmaker/kill
+execute at @a[scores={DeathCount=1}] run summon armor_stand ~ ~ ~ {Marker:1,Tags:["Corpses"],ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{id:"minecraft:leather_leggings",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{CustomModelData:5,Unbreakable:1,display:{color:2883328}}},{}],NoBasePlate:true,ShowArms:true}
+execute as @a[scores={DeathCount=1}] at @s run loot replace entity @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] armor.head loot maw:item/head_copy
+execute as @a[scores={DeathCount=1}] at @s run scoreboard players operation @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] PlayerNumber = @s PlayerNumber
+execute as @a[scores={DeathCount=1}] at @s run tp @e[type=armor_stand,tag=Corpses,sort=nearest,limit=1,distance=..3] @s
+execute as @a[scores={DeathCount=1}] run gamemode spectator @s
+execute if entity @a[scores={DeathCount=1,Client=1}] run tellraw @a[scores={CurrentRole=9,Pursuer=0}] [{"text":"[通達] ","color": "green"},{"text":"依頼人が死亡しました","color": "white","bold": false}]
+execute if entity @a[scores={DeathCount=1,Client=1}] run clear @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] written_book
+execute if entity @a[scores={DeathCount=1,Client=1}] run loot give @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] loot maw:item/books/pursuer
+execute if entity @a[scores={DeathCount=1,Client=1}] run loot replace entity @a[scores={CurrentRole=9,Pursuer=0,DeathCount=0}] inventory.8 loot maw:item/lore/neutral/pursuer
+execute if entity @a[scores={DeathCount=1,Client=1}] run scoreboard players set @a[scores={CurrentRole=9,Pursuer=0}] Pursuer 1
+execute as @a[scores={DeathCount=1,TeamWerewolf=1,Lovers=0}] run scoreboard players remove #maw WolfCount 1
+execute as @a[scores={DeathCount=1,TeamVillager=1,Lovers=0}] run scoreboard players remove #maw VillageCount 1
+execute as @a[scores={DeathCount=1,Lovers=1..}] run scoreboard players remove #maw LoversCount 1
+execute as @a[scores={DeathCount=1},tag=!Douse] run scoreboard players remove #maw DouseCount 1
+execute as @a[scores={DeathCount=1},tag=!Infect,tag=!PlagueDoctor] run scoreboard players remove #maw InfectCount 1
+execute if entity @a[scores={TeamVillager=1..,KillCount=1..}] as @a[scores={DeathCount=1,CurrentRole=16}] run function maw:system/finish/winner/jester
+execute as @a[scores={KillCount=1..}] if entity @a[scores={DeathCount=1,CurrentRole=17}] run function maw:system/ongame/role/plague_doctor/infect
+execute if score #maw WolfCount matches 1.. if score #maw VillageCount matches 1.. as @a[scores={DeathCount=1},tag=Result] run function maw:system/finish/result
+execute as @a[scores={DeathCount=1}] run scoreboard players set @s DeathCount 2
 
 # ランダムアイテム
 

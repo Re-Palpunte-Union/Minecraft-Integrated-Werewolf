@@ -1,3 +1,6 @@
+#ペスト医師
+scoreboard players set #maw InfectCount 100
+
 execute unless entity @a[scores={CurrentRole=9,DeathCount=0,Pursuer=1}] run title @a title {"text":"村人陣営の勝利","color": "green"}
 execute if entity @a[scores={CurrentRole=9,DeathCount=0,Pursuer=1}] run title @a title [{"text":"村人陣営&","color": "green"},{"text":"追跡者","color": "#869919"},{"text":"の勝利","color": "green"}]
 

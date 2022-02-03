@@ -11,7 +11,7 @@
                 {
                     "function": "minecraft:set_name",
                     "name":[
-                        [{"text":"占い師","bold": true,"color": "yellow","italic": false}]
+                        [{"text":"霊媒師","bold": true,"color": "yellow","italic": false}]
                     ]
               },
               {
