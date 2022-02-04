@@ -54,6 +54,14 @@ scoreboard objectives add Cleaner dummy
 scoreboard objectives add BiteCount dummy
 #ペスト医師
 scoreboard objectives add InfectCount dummy
+#トリックスター
+scoreboard objectives add Trickster dummy
+scoreboard objectives add Teleporter1 dummy
+scoreboard objectives add Teleporter2 dummy
+scoreboard objectives add Teleporter3 dummy
+scoreboard objectives add LightsDown dummy
+scoreboard objectives add CoolDown dummy
+scoreboard objectives add enable dummy
 
 ## ランダムアイテム
 scoreboard objectives add malgunarrow minecraft.used:minecraft.crossbow
@@ -106,6 +114,16 @@ scoreboard players set @a Cleaner 0
 #ペスト医師
 execute as @a[scores={PlayerNumber=1..}] run scoreboard players add #maw InfectCount 1
 scoreboard players set @a InfectCount 0
+#トリックスター
+scoreboard players set @a Trickster 0
+scoreboard players set @a Teleporter1 0
+scoreboard players set @a Teleporter2 0
+scoreboard players set @a Teleporter3 0
+scoreboard players set @a enable 0
+scoreboard players set @a LightsDown 0
+scoreboard players set @a CoolDown 0
+scoreboard players set #maw Trickster 1
+scoreboard players set #Trickster LightsDown 0
 
 #ランダムアイテム
 scoreboard players set @a CountDown 5

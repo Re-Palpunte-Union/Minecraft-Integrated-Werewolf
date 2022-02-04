@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/lovers1",
+          "name": "maw:item/books/lovers/lovers1",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/lovers2",
+          "name": "maw:item/books/lovers/lovers2",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/werewolf",
+          "name": "maw:item/books/werewolf/werewolf",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -60,7 +60,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/madman",
+          "name": "maw:item/books/werewolf/madman",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -78,7 +78,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/seer",
+          "name": "maw:item/books/villager/seer",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -96,7 +96,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/medium",
+          "name": "maw:item/books/villager/medium",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -114,7 +114,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/villager",
+          "name": "maw:item/books/villager/villager",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -132,7 +132,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/sheriff",
+          "name": "maw:item/books/villager/sheriff",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -150,7 +150,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/phantom",
+          "name": "maw:item/books/villager/phantom",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -168,7 +168,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/nice_guesser",
+          "name": "maw:item/books/villager/nice_guesser",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -187,7 +187,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/evil_guesser",
+          "name": "maw:item/books/werewolf/evil_guesser",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -224,7 +224,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/lawyer",
+          "name": "maw:item/books/neutral/lawyer",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -242,7 +242,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/arsonist",
+          "name": "maw:item/books/neutral/arsonist",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -260,7 +260,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/time_load",
+          "name": "maw:item/books/villager/time_load",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -278,7 +278,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/dollmaker",
+          "name": "maw:item/books/werewolf/dollmaker",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -297,7 +297,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/spy",
+          "name": "maw:item/books/villager/spy",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -315,7 +315,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/cleaner",
+          "name": "maw:item/books/werewolf/cleaner",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -333,7 +333,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/vampire",
+          "name": "maw:item/books/werewolf/vampire",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -351,7 +351,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/jester",
+          "name": "maw:item/books/neutral/jester",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -369,7 +369,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/plague_doctor",
+          "name": "maw:item/books/neutral/plague_doctor",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -387,13 +387,31 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "maw:item/books/sidekick",
+          "name": "maw:item/books/werewolf/mafia",
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
                 "CurrentRole": 18
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "maw:item/books/werewolf/trickster",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "CurrentRole": 19
               }
             }
           ]

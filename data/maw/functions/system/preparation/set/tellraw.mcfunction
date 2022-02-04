@@ -47,7 +47,7 @@ execute if data storage datapack:server {mawSettings:{"Jester":1b}} run tellraw 
 
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run tellraw @a [{"text":"・"},{"text":"ペスト医師","bold":true,"color": "#ffc000"},{"text":"あり","color":"reset","bold":false}]
 
-execute if data storage datapack:server {mawSettings:{"Sidekick":1b}} run tellraw @a [{"text":"・"},{"text":"サイドキック","bold":true,"color": "dark_red"},{"text":"あり","color":"reset","bold":false}]
+execute if data storage datapack:server {mawSettings:{"Mafia":1b}} run tellraw @a [{"text":"・"},{"text":"マフィア","bold":true,"color": "dark_red"},{"text":"あり","color":"reset","bold":false}]
 
 execute if data storage datapack:server {mawSettings:{"Lovers":1b}} run tellraw @a [{"text":"・"},{"text":"恋人","bold":true,"color": "#e839b9"},{"text":"あり","color":"reset","bold":false}]
 

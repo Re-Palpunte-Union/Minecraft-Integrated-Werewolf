@@ -46,5 +46,8 @@ execute if data storage datapack:server {mawSettings:{"Jester":0b}} if score ジ
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} unless score ペスト医師 PrevMAW matches -17 run scoreboard players set ペスト医師 PrevMAW -17
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":0b}} if score ペスト医師 PrevMAW matches -17 run scoreboard players reset ペスト医師 PrevMAW
 
-execute if data storage datapack:server {mawSettings:{"Sidekick":1b}} unless score サイドキック PrevMAW matches -18 run scoreboard players set サイドキック PrevMAW -18
-execute if data storage datapack:server {mawSettings:{"Sidekick":0b}} if score サイドキック PrevMAW matches -18 run scoreboard players reset サイドキック PrevMAW
+execute if data storage datapack:server {mawSettings:{"Mafia":1b}} unless score マフィア PrevMAW matches -18 run scoreboard players set マフィア PrevMAW -18
+execute if data storage datapack:server {mawSettings:{"Mafia":0b}} if score マフィア PrevMAW matches -18 run scoreboard players reset マフィア PrevMAW
+
+execute if data storage datapack:server {mawSettings:{"Trickster":1b}} unless score トリックスター PrevMAW matches -19 run scoreboard players set トリックスター PrevMAW -19
+execute if data storage datapack:server {mawSettings:{"Trickster":0b}} if score トリックスター PrevMAW matches -19 run scoreboard players reset トリックスター PrevMAW

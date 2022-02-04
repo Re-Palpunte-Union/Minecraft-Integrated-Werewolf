@@ -55,6 +55,14 @@ scoreboard objectives remove Cleaner
 scoreboard objectives remove BiteCount
 #ペスト医師
 scoreboard objectives remove InfectCount
+#トリックスター
+scoreboard objectives remove Trickster
+scoreboard objectives remove Teleporter1
+scoreboard objectives remove Teleporter2
+scoreboard objectives remove Teleporter3
+scoreboard objectives remove LightsDown
+scoreboard objectives remove CoolDown
+scoreboard objectives remove enable
 
 ## ランダムアイテム
 scoreboard objectives remove malgunarrow

@@ -7,11 +7,16 @@ execute at @a[scores={UsedBow=1..},tag=DisableBow] positioned ^ ^ ^0.3 as @e[typ
 kill @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:5}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:paper",tag:{CustomModelData:-1}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:1}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:2}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:3}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:pink_concrete",tag:{CustomModelData:5}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:redstone_lamp",tag:{CustomModelData:5}}}]
 ### 常時陣営設定
 function maw:system/ongame/role/team
 ### 満腹度回復
 effect give @a saturation 1000000 9 true
-### 人狼が残り一人になったらサイドキックの弓矢無効化解除
+### 人狼が残り一人になったらマフィアの弓矢無効化解除
 execute if score #maw WolfCount matches 1 run tellraw @a[scores={CurrentRole=18,DeathCount=0},tag=DisableBow] [{"text":"弓矢でキルできるようになった","italic": true,"color": "red"}]
 execute if score #maw WolfCount matches 1 run tag @a[scores={CurrentRole=18,DeathCount=0},tag=DisableBow] remove DisableBow
 
@@ -102,6 +107,9 @@ execute as @a[scores={BiteCount=0..200}] run title @a[scores={CurrentRole=15}] a
 #死亡
 execute as @a[scores={BiteCount=0}] run function maw:system/ongame/role/vampire/kill
 
+### トリックスター
+execute if score #maw Trickster matches 1 run function maw:system/ongame/role/trickster/disable/
+execute if score #maw Trickster matches 2 run function maw:system/ongame/role/trickster/enable/
 ## 村人陣営
 ### 占い(3)
 function maw:system/ongame/role/seer/main

@@ -1,0 +1,31 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:pink_concrete",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"テレポーター有効化","italic":false,"color":"white"}]
+                ]
+              },{
+                "function": "set_lore",
+                "lore": [
+                    [{"text":"有効化と同時に強制停電します","color":"white","italic": false}]
+                ]
+            },{
+                "function":"minecraft:set_nbt",
+                "tag":"{CustomModelData:5}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

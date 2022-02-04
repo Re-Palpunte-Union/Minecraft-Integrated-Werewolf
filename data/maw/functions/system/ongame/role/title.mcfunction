@@ -40,6 +40,9 @@ title @s[scores={CurrentRole=16}] subtitle [{"text":"Be killed by the ","color":
 ## ペスト医師
 title @s[scores={CurrentRole=17}] title {"text":"PLAGUE DOCTOR","color":"#ffc000","bold":true}
 title @s[scores={CurrentRole=17}] subtitle [{"text":"Spread disease to wipe out the villager","color":"#ffc000","bold":true}]
-## ジェスター
-title @s[scores={CurrentRole=18}] title {"text":"SIDEKICK","color":"dark_red","bold":true}
-title @s[scores={CurrentRole=18}] subtitle [{"text":"You are Sidekick","color":"dark_red","bold":true}]
+## サイドキック
+title @s[scores={CurrentRole=18}] title {"text":"MAFIA","color":"dark_red","bold":true}
+title @s[scores={CurrentRole=18}] subtitle [{"text":"You are Mafia","color":"dark_red","bold":true}]
+## トリックスター
+title @s[scores={CurrentRole=19}] title {"text":"TRICKSTER","color":"dark_red","bold":true}
+title @s[scores={CurrentRole=19}] subtitle [{"text":"Use your jack-in-the-boxes to surprise others","color":"dark_red","bold":true}]

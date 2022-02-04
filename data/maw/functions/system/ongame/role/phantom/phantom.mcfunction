@@ -5,6 +5,8 @@ scoreboard players operation @a[scores={CurrentRole=7,DeathCount=0}] CurrentRole
 execute if score @s CurrentRole matches 8 if score @s EvilGuesser matches 1 run scoreboard players set @a[scores={PrevRole=7,CurrentRole=8,DeathCount=0}] EvilGuesser 1
 execute if score @s CurrentRole matches 8 if score @s EvilGuesser matches 0 run scoreboard players set @a[scores={PrevRole=7,CurrentRole=8,DeathCount=0}] EvilGuesser 0
 
+execute if score @s CurrentRole matches 19 run scoreboard players set @a[scores={PrevRole=7,CurrentRole=19,DeathCount=0}] CurrentRole 1
+
 execute if score @s CurrentRole matches 9..10 if entity @a[scores={PrevRole=7,DeathCount=0}] run scoreboard players remove #maw VillageCount 1
 execute if score @s TeamWerewolf matches 1..2 if entity @a[scores={PrevRole=7,DeathCount=0}] run scoreboard players remove #maw VillageCount 1
 execute if score @s TeamWerewolf matches 1 if entity @a[scores={PrevRole=7,DeathCount=0}] run scoreboard players add #maw WolfCount 1

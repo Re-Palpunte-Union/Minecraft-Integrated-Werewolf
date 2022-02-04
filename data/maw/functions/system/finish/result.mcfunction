@@ -12,7 +12,9 @@ execute if data storage datapack:server {mawSettings:{"Cleaner":1b}} run tellraw
 
 execute if data storage datapack:server {mawSettings:{"Vampire":1b}} run tellraw @s [{"translate":"[ヴァンパイア] %s","with":[{"selector":"@a[scores={PrevRole=15}]","bold": false,"color": "white"}],"bold": true,"color": "dark_red"}]
 
-execute if data storage datapack:server {mawSettings:{"Sidekick":1b}} run tellraw @s [{"translate":"[サイドキック] %s","with":[{"selector":"@a[scores={PrevRole=18}]","bold": false,"color": "white"}],"bold": true,"color": "dark_red"}]
+execute if data storage datapack:server {mawSettings:{"Mafia":1b}} run tellraw @s [{"translate":"[マフィア] %s","with":[{"selector":"@a[scores={PrevRole=18}]","bold": false,"color": "white"}],"bold": true,"color": "dark_red"}]
+
+execute if data storage datapack:server {mawSettings:{"Trickster":1b}} run tellraw @s [{"translate":"[トリックスター] %s","with":[{"selector":"@a[scores={PrevRole=19}]","bold": false,"color": "white"}],"bold": true,"color": "dark_red"}]
 
 execute if data storage datapack:server {mawSettings:{"DollMaker":0b}} run tellraw @s [{"translate":"[狂人] %s","with":[{"selector":"@a[scores={PrevRole=2}]","bold": false,"color": "white"}],"bold": true,"color": "light_purple"}]
 

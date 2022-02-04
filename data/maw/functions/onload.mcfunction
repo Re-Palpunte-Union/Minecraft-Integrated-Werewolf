@@ -18,8 +18,10 @@ execute unless data storage datapack:server {mawSettings:{"DollMaker":0b}} unles
 execute unless data storage datapack:server {mawSettings:{"Cleaner":0b}} unless data storage datapack:server {mawSettings:{"Cleaner":1b}} run data modify storage datapack:server mawSettings merge value {"Cleaner":0b}
 #ヴァンパイア(15)
 execute unless data storage datapack:server {mawSettings:{"Vampire":0b}} unless data storage datapack:server {mawSettings:{"Vampire":1b}} run data modify storage datapack:server mawSettings merge value {"Vampire":0b}
-#サイドキック(15)
-execute unless data storage datapack:server {mawSettings:{"Sidekick":0b}} unless data storage datapack:server {mawSettings:{"Sidekick":1b}} run data modify storage datapack:server mawSettings merge value {"Sidekick":0b}
+#マフィア(18)
+execute unless data storage datapack:server {mawSettings:{"Mafia":0b}} unless data storage datapack:server {mawSettings:{"Mafia":1b}} run data modify storage datapack:server mawSettings merge value {"Mafia":0b}
+#トリックスター(19)
+execute unless data storage datapack:server {mawSettings:{"Trickster":0b}} unless data storage datapack:server {mawSettings:{"Trickster":1b}} run data modify storage datapack:server mawSettings merge value {"Trickster":0b}
 
 ##村人陣営
 #占い師

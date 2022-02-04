@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomModelData:5,resolved:0b,title:\"マイクラ人狼\",author:\"\",pages:['[{\"translate\":\"あなたは%sです。\n%s\",\"with\":[{\"text\":\"サイドキック\",\"color\":\"dark_red\",\"bold\":true},{\"selector\":\"@a[scores={WerewolfBook=1}]\"}]}]']}"
+                "tag": "{CustomModelData:5,resolved:0b,title:\"マイクラ人狼\",author:\"\",pages:['[{\"translate\":\"あなたは%sです。\n%s\",\"with\":[{\"text\":\"トリックスター\",\"color\":\"dark_red\",\"bold\":true},{\"selector\":\"@a[scores={WerewolfBook=1}]\"}]}]']}"
               }
             ]
           }

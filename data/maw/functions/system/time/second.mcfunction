@@ -7,6 +7,7 @@ scoreboard players set #maw tick 0
 execute if score #maw Phase matches 3 if score #maw glowtime matches 0 run effect give @a[scores={CurrentRole=1..,DeathCount=0},gamemode=!spectator] glowing 5 0 true
 
 execute if score #maw Phase matches 3 if score #maw second matches 600 run bossbar set information visible true
+execute if score #maw Phase matches 3 if score #maw second matches 600 run bossbar set information color yellow
 execute if score #maw Phase matches 3 if score #maw second matches 600 run playsound block.anvil.place master @a ~ ~ ~ 1 1 1
 execute if score #maw Phase matches 3 if score #maw second matches 600 run bossbar set information max 300
 execute if score #maw Phase matches 3 if score #maw second matches 600 run tellraw @a [{"text":"[通達] ","color": "green"},{"text":"ゲーム開始から10分が経過しました","color": "white","bold": false}]

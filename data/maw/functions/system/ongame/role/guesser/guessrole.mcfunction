@@ -9,7 +9,7 @@ execute if data storage datapack:server {mawSettings:{"Cleaner":1b}} as @a[score
 
 execute if data storage datapack:server {mawSettings:{"Vampire":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"ヴァンパイアだ！","color":"dark_red","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 15"}}]}]
 
-execute if data storage datapack:server {mawSettings:{"Sidekick":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"サイドキックだ！","color":"dark_red","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 18"}}]}]
+execute if data storage datapack:server {mawSettings:{"Mafia":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"マフィアだ！","color":"dark_red","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 18"}}]}]
 
 execute as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"狂人だ！","color":"light_purple","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 2"}}]}]
 

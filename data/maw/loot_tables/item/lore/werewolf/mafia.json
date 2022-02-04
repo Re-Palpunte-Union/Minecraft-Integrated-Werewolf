@@ -11,7 +11,7 @@
                 {
                     "function": "minecraft:set_name",
                     "name":[
-                        [{"text":"サイドキック","bold": true,"color": "dark_red","italic": false}]
+                        [{"text":"マフィア","bold": true,"color": "dark_red","italic": false}]
                     ]
               },
               {

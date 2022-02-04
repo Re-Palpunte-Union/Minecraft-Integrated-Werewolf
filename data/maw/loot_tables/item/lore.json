@@ -333,13 +333,31 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "name": "maw:item/lore/werewolf/sidekick",
+            "name": "maw:item/lore/werewolf/mafia",
             "conditions": [
               {
                 "condition": "minecraft:entity_scores",
                 "entity": "this",
                 "scores": {
                   "CurrentRole": 18
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "name": "maw:item/lore/werewolf/trickster",
+            "conditions": [
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "CurrentRole": 19
                 }
               }
             ]
