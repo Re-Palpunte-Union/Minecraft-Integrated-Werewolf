@@ -7,9 +7,8 @@ execute at @a[scores={UsedBow=1..},tag=DisableBow] positioned ^ ^ ^0.3 as @e[typ
 kill @e[type=item,nbt={Item:{id:"minecraft:written_book",tag:{CustomModelData:5}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:carrot_on_a_stick"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:paper",tag:{CustomModelData:-1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:1}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:2}}}]
-kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete",tag:{CustomModelData:3}}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_stained_glass"}}]
+kill @e[type=item,nbt={Item:{id:"minecraft:red_concrete"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:pink_concrete",tag:{CustomModelData:5}}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:redstone_lamp",tag:{CustomModelData:5}}}]
 ### 常時陣営設定

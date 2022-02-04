@@ -9,7 +9,7 @@ execute if score #TricksterAnimation LightsDown matches 9..16 run title @a actio
 effect give @a[scores={TeamWerewolf=0,DeathCount=0}] blindness 2 0 true
 effect give @a[scores={TeamWerewolf=2,DeathCount=0}] blindness 2 0 true
 
-execute if score #Trickster LightsDown matches 0 run scoreboard players set @a[scores={CurrentRole=19,DeathCount=0}] CoolDown 6000
+execute if score #Trickster LightsDown matches 0 run scoreboard players set @a[scores={CurrentRole=19,DeathCount=0}] CoolDown 3000
 execute if score #Trickster LightsDown matches 0 run title @a actionbar {"text":""}
 execute if score #Trickster LightsDown matches 0 run effect clear @a blindness
 execute if score #Trickster LightsDown matches 0 run loot replace entity @a[scores={CurrentRole=19,DeathCount=0}] inventory.22 loot maw:item/ability/trickster/enable/light_down_cool

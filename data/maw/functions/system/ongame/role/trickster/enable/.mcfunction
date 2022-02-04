@@ -40,6 +40,7 @@ execute as @a[scores={CurrentRole=19,DeathCount=0,CoolDown=1}] run loot replace 
 execute as @a[scores={CurrentRole=19,LightsDown=0,DeathCount=0},nbt=!{Inventory:[{id:"minecraft:redstone_lamp",Slot:31b,tag:{CustomModelData:5}}]}] run scoreboard players set @s LightsDown 1
 execute as @a[scores={CurrentRole=19,LightsDown=0,DeathCount=0},nbt={Inventory:[{id:"minecraft:redstone_lamp",Slot:31b,tag:{CustomModelData:5}}]}] run scoreboard players set @s LightsDown 0
 execute as @a[scores={CurrentRole=19,LightsDown=1..,DeathCount=0}] run clear @s redstone_lamp{CustomModelData:5}
+execute if score #Trickster LightsDown matches 0 as @a[scores={CurrentRole=19,LightsDown=1..,CoolDown=0,DeathCount=0}] run effect give @a[scores={CurrentRole=1..,PlayerNumber=1..,DeathCount=0}] blindness 1 0 true
 execute if score #Trickster LightsDown matches 0 as @a[scores={CurrentRole=19,LightsDown=1..,CoolDown=0,DeathCount=0}] run playsound minecraft:entity.player.levelup master @a[scores={TeamWerewolf=1}] ~ ~ ~ 100 0 1
 execute if score #Trickster LightsDown matches 0 as @a[scores={CurrentRole=19,LightsDown=1..,CoolDown=0,DeathCount=0}] run scoreboard players set #Trickster LightsDown 200
 execute as @a[scores={CurrentRole=19,LightsDown=1..,DeathCount=0}] run scoreboard players set @s LightsDown 0

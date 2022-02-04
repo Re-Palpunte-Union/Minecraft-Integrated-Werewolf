@@ -20,7 +20,7 @@
                 ]
             },{
               "function":"minecraft:set_nbt",
-              "tag":"{CustomModelData:2,Enchantments:[{id:\"minecraft:mending\",lvl:1}],HideFlags:1}"
+              "tag":"{CustomModelData:2,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
             }
           ]
         }

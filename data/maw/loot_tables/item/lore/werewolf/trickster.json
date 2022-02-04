@@ -24,7 +24,7 @@
                   [{"text":"テレポーターを三か所に設置できる","italic":false,"color":"white"}],
                   [{"text":"  すべて設置して有効化するまで他人からは見ることができない","italic":false,"color":"white"}],
                   [{"text":"有効化したあとは任意のタイミングで停電を起こすことができる","italic":false,"color":"white"}],
-                  [{"text":"                              (10秒間, クールダウン300秒)","italic":false,"color":"white"}]
+                  [{"text":"                              (10秒間, クールダウン150秒)","italic":false,"color":"white"}]
                 ]
             }
             ]

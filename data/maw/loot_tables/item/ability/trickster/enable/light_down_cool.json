@@ -15,7 +15,7 @@
                 ]
               },{
                 "function":"minecraft:set_nbt",
-                "tag":"{CustomModelData:5,Enchantments:[{id:\"minecraft:mending\",lvl:1}],HideFlags:1}"
+                "tag":"{CustomModelData:5}"
               }
             ]
           }
