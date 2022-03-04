@@ -1,4 +1,0 @@
-gamerule sendCommandFeedback true
-gamerule keepInventory false
-gamerule logAdminCommands true
-gamerule showDeathMessages true
