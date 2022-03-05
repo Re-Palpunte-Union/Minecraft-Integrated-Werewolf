@@ -1,0 +1,20 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:5,resolved:0b,title:\"マイクラ人狼\",author:\"\",pages:['[{\"translate\":\"あなたは%sです。\",\"with\":[{\"text\":\"弁護士\",\"color\":\"#869919\",\"bold\":true}]},{\"translate\":\"\n依頼人 --> %s\",\"with\":[{\"selector\":\"@a[scores={Client=1}]\"}],\"color\":\"#869919\",\"bold\":true}]']}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

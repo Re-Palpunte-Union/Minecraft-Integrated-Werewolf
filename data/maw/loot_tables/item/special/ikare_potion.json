@@ -1,0 +1,45 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "☠",
+                    "italic": false,
+                    "color": "dark_red",
+                    "obfuscated": true
+                  },
+                  {
+                    "text": "イカれポーション",
+                    "italic": false,
+                    "color": "white",
+                    "obfuscated": false
+                  },
+                  {
+                    "text": "☠",
+                    "italic": false,
+                    "color": "dark_red",
+                    "obfuscated": true
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:5,CustomPotionEffects:[{Id:24b,Amplifier:5b,Duration:200},{Id:8b,Amplifier:20b,Duration:200}],CustomPotionColor:16777215}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

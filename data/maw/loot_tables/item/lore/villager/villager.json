@@ -1,0 +1,32 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name":[
+                        [{"text":"村人","bold": true,"color": "green","italic": false}]
+                    ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:-1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
+              },{
+                "function":"minecraft:set_lore",
+                "lore": [
+                  [{"text":"村人陣営","italic":false,"color":"green"}],
+                  [{"text":"普通の村人","italic":false,"color":"white"}]
+                ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }

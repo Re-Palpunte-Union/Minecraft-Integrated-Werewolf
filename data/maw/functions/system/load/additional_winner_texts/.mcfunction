@@ -1,0 +1,1 @@
+data modify storage datapack:server AdditionalWinnerTexts merge value {"CAdditionalWinner":""}

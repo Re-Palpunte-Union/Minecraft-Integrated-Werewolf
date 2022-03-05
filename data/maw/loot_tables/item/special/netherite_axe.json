@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "近接一撃必殺武器",
+                    "italic": false,
+                    "color": "gold"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:255}],Damage:2031,CustomModelData:5,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:100,Operation:0,UUID:[I;-729562970,2040284999,-1238088349,1574605130],Slot:\"mainhand\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

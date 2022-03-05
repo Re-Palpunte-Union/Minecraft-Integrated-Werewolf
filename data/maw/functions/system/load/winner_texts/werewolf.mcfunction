@@ -1,0 +1,1 @@
+data modify storage datapack:server WinnerTexts merge value {"Werewolf":"人狼陣営"}

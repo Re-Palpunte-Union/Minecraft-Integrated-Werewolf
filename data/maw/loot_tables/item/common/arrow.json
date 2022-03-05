@@ -1,0 +1,20 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:5,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

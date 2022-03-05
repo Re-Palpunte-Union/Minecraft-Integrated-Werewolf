@@ -1,0 +1,31 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:crossbow",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"フックショット","italic":false}]
+                ]
+              },{
+                  "function":"minecraft:set_lore",
+                  "lore": [
+                      [{"text":"ふっくしょっと","italic":false,"color":"white"}]
+                  ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Charged:1b,Enchantments:[{id:\"quick_charge\",lvl:10}],HideFlags:63,ChargedProjectiles:[{id:\"tipped_arrow\",Count:1b,tag:{CustomPotionEffects:[{Id:15b,Amplifier:60b,Duration:100,ShowParticles:false}],CustomPotionColor:0}}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

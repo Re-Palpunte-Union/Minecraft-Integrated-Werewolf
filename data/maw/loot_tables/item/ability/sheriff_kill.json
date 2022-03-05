@@ -1,0 +1,33 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "set_name",
+                "name": [
+                  [
+                    {
+                      "text": "キル",
+                      "italic": false,
+                      "bold": true,
+                      "color": "#f8cd46"
+                    }
+                  ]
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:1}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

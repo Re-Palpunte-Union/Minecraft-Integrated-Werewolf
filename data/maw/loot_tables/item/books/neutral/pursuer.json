@@ -1,0 +1,28 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:5,title:\"マイクラ人狼\",author:\"\",pages:['[{\"translate\":\"あなたは%sになりました。\",\"with\":[{\"text\":\"追跡者\",\"color\":\"#869919\",\"bold\":true}]}]']}"
+              }
+            ]
+          }
+        ]
+      },{
+          "rolls": 1,
+          "entries": [
+              {
+                  "type": "minecraft:loot_table",
+                  "name": "maw:item/ability/pursuer_blank"
+              }
+          ]
+      }
+    ]
+  }

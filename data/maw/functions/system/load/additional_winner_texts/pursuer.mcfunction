@@ -1,0 +1,1 @@
+data modify storage datapack:server AdditionalWinnerTexts merge value {"Pursuer":"&追跡者"}

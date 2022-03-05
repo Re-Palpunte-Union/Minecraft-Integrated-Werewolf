@@ -1,0 +1,31 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:crossbow",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"マシンガン","italic":true}]
+                ]
+              },{
+                  "function":"minecraft:set_lore",
+                  "lore": [
+                      [{"text":"かませ！","italic":false,"color":"white"}]
+                  ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{CustomModelData:5,Enchantments:[{id:\"quick_charge\",lvl:10}],Charged:1,HideFlags:63,ChargedProjectiles:[{id:\"arrow\",Count:1b,tag:{Color:-1,Silent:1b,damage:1000,PickupDelay:1000s}}]}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

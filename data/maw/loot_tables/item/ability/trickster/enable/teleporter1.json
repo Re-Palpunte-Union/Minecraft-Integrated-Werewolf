@@ -1,0 +1,31 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:red_concrete",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"テレポーター1","italic":false,"color":"white"}]
+                ]
+              },{
+                "function": "set_lore",
+                "lore": [
+                    [{"text":"テレポーター2 に飛ぶ","italic":false,"color":"white"}]
+                ]
+            },{
+                "function":"minecraft:set_nbt",
+                "tag":"{CustomModelData:1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

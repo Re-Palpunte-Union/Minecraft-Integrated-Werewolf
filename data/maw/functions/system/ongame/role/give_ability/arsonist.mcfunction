@@ -1,0 +1,1 @@
+loot give @a[scores={CurrentRole=10,DeathCount=0}] loot maw:item/ability/arsonist_douse

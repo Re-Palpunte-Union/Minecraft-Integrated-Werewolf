@@ -1,0 +1,51 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:end_rod",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "ペンライト",
+                    "italic": false,
+                    "color": "white"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "ただのペンライト",
+                    "italic": false,
+                    "color": "white"
+                  }
+                ],
+                [
+                  {
+                    "text": "なんの効果もない",
+                    "italic": false,
+                    "color": "white"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

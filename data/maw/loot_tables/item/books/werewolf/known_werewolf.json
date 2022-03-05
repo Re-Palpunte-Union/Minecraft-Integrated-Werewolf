@@ -1,0 +1,20 @@
+{
+    "type": "generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:5,resolved:0b,title:\"マイクラ人狼\",author:\"\",pages:['[{\"translate\":\"%sリスト\n%s\",\"with\":[{\"text\":\"人狼\",\"color\":\"red\",\"bold\":true},{\"selector\":\"@a[scores={WerewolfBook=1}]\"}]}]']}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

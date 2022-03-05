@@ -1,0 +1,26 @@
+{
+    "type": "generic",
+    "pools":[
+      {
+        "rolls":1,
+        "entries":[
+          {
+            "type":"minecraft:item",
+            "name":"minecraft:shield",
+            "functions":[
+              {
+                "function":"minecraft:set_name",
+                "name": [
+                  [{"text":"騎士の盾","italic":true}]
+                ]
+              },{
+                "function":"minecraft:set_nbt",
+                "tag":"{Unbreakable:1,CustomModelData:5}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

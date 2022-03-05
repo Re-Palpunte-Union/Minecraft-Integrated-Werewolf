@@ -1,0 +1,1 @@
+data modify storage datapack:server WinnerTexts merge value {"PlagueDoctor":"ペスト医師"}

@@ -1,0 +1,32 @@
+{
+  "type": "generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": [
+                [
+                  {
+                    "text": "拳銃",
+                    "italic": false,
+                    "color": "green"
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{id:\"minecraft:power\",lvl:255},{id:\"minecraft:infinity\",lvl:1},{id:\"minecraft:vanishing_curse\",lvl:1}],CustomModelData:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
