@@ -21,7 +21,9 @@
                 "function":"minecraft:set_lore",
                 "lore": [
                   [{"text":"第三陣営","italic":false,"color":"dark_purple"}],
-                    [{"text":"愛する人が勝利すると一緒に勝利する","italic":false,"color":"white"}]
+                  [{"text":"愛する人が勝利すると一緒に勝利する","italic":false,"color":"white"}],
+                  [{"text":"愛する人が死ぬと一緒に死ぬ","italic":false,"color":"white"}]
+
                 ]
             }
             ]
