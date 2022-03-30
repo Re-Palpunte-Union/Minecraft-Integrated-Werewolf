@@ -1,6 +1,6 @@
 # メインシステム
 ### 矢のパーティクル
-execute if entity @a[tag=EnableArrowParticle] as @e[type=minecraft:arrow,nbt={inGround:false,crit:0b}] run data modify entity @s crit set value 1b
+execute if entity @a[tag=ShowArrowParticle] as @e[type=minecraft:arrow,nbt={inGround:false,crit:0b}] run data modify entity @s crit set value 1b
 ### 弓矢無効化
 execute at @a[scores={UsedBow=1..},tag=DisableBow] positioned ^ ^ ^0.3 as @e[type=arrow,nbt={inGround:false},limit=1,sort=nearest] run data modify entity @s damage set value 0.5
 ### アイテムキル

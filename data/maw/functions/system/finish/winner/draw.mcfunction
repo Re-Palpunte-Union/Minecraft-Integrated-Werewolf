@@ -1,5 +1,6 @@
 #ペスト医師
 scoreboard players set #maw InfectCount 100
+tag @a remove Infect
 
 title @a title {"text":"引き分け","color": "gray"}
 playsound block.portal.trigger master @a[scores={CurrentRole=1..}] ~ ~ ~ 1 1 1

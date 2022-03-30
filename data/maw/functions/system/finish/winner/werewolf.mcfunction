@@ -1,5 +1,6 @@
 #ペスト医師
 scoreboard players set #maw InfectCount 100
+tag @a remove Infect
 
 tag @a[scores={CurrentRole=9}] add Lawyer
 
