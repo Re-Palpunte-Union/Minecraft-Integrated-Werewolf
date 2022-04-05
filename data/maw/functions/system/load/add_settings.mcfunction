@@ -40,6 +40,8 @@ execute unless data storage datapack:server {mawSettings:{"Jester":0b}} unless d
 execute unless data storage datapack:server {mawSettings:{"PlagueDoctor":0b}} unless data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run data modify storage datapack:server mawSettings merge value {"PlagueDoctor":0b}
 #純愛者(20)
 execute unless data storage datapack:server {mawSettings:{"UnilateralLover":0b}} unless data storage datapack:server {mawSettings:{"UnilateralLover":1b}} run data modify storage datapack:server mawSettings merge value {"UnilateralLover":0b}
+#純愛者(21)
+execute unless data storage datapack:server {mawSettings:{"Psychopath":0b}} unless data storage datapack:server {mawSettings:{"Psychopath":1b}} run data modify storage datapack:server mawSettings merge value {"Psychopath":0b}
 
 
 ###特殊役職詳細設定

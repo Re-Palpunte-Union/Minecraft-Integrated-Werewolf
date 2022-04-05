@@ -18,6 +18,7 @@ scoreboard objectives add WerewolfBook dummy
 scoreboard objectives add UsedBow used:bow
 scoreboard objectives add UsedLPotion used:lingering_potion
 scoreboard objectives add RoleDone dummy
+scoreboard objectives add ReviveCount dummy
 
 #特殊役職設定
 scoreboard objectives add EnableNeutrals dummy
@@ -62,6 +63,8 @@ scoreboard objectives add Teleporter3 dummy
 scoreboard objectives add LightsDown dummy
 scoreboard objectives add CoolDown dummy
 scoreboard objectives add enable dummy
+#サイコパス
+scoreboard objectives add PsychopathCount dummy
 
 ## ランダムアイテム
 scoreboard objectives add malgunarrow minecraft.used:minecraft.crossbow

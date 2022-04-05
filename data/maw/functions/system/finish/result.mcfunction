@@ -50,6 +50,8 @@ execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run te
 
 execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} run tellraw @s [{"translate":"[純愛者] %s","with":[{"selector":"@a[scores={PrevRole=20}]","bold": false,"color": "white"}],"bold": true,"color": "#66ffa5"}]
 
+execute if data storage datapack:server {mawSettings:{"Psychopath":1b}} run tellraw @s [{"translate":"[サイコパス] %s","with":[{"selector":"@a[scores={PrevRole=21}]","bold": false,"color": "white"}],"bold": true,"color": "dark_purple"}]
+
 execute if data storage datapack:server {mawSettings:{"Lovers":1b}} run tellraw @s [{"translate":"[恋人] %s","with":[{"selector":"@a[scores={Lovers=1..2}]","bold": false,"color": "white"}],"bold": true,"color": "#e839b9"}]
 
 execute if data storage datapack:server {mawSettings:{"Phantom":1b}} run tellraw @s [{"text":"\n生霊記録  "},{"translate":"%s => %s","with":[{"selector":"@a[scores={PrevRole=7}]","color": "blue"},{"selector":"@a[scores={Phantom=100}]"}]}]

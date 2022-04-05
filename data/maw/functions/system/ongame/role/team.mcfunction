@@ -49,3 +49,9 @@ scoreboard players set @a[scores={CurrentRole=18}] TeamVillager 0
 #トリックスター
 scoreboard players set @a[scores={CurrentRole=19}] TeamWerewolf 1
 scoreboard players set @a[scores={CurrentRole=19}] TeamVillager 0
+#純愛者
+scoreboard players set @a[scores={CurrentRole=20}] TeamWerewolf 0
+scoreboard players set @a[scores={CurrentRole=20}] TeamVillager 0
+#サイコパス
+scoreboard players set @a[scores={CurrentRole=21}] TeamWerewolf 0
+scoreboard players set @a[scores={CurrentRole=21}] TeamVillager 0

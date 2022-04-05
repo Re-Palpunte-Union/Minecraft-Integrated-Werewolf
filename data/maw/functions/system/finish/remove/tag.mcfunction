@@ -21,6 +21,8 @@ tag @a remove PlagueDoctor
 #純愛者
 tag @a remove UnilateralLover
 tag @a remove ToLoving
+#サイコパス
+tag @a remove Psychopath
 
 #勝者
 tag @a remove Winner

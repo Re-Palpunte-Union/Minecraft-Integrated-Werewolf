@@ -21,6 +21,7 @@
 # 18w マフィア dark_red
 # 19w トリックスター dark_red
 # 20n 純愛者 #66ffa5
+# 21n サイコパス dark_purple
 #########サブ役職#########
 # Lovers 恋人 #e839b9
 #################################################################
@@ -33,6 +34,7 @@ execute if data storage datapack:server {mawSettings:{"Arsonist":1b}} run scoreb
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 17
 execute if data storage datapack:server {mawSettings:{"TimeLoad":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 11
 execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 20
+execute if data storage datapack:server {mawSettings:{"Psychopath":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 21
 execute if data storage datapack:server {mawSettings:{"Sheriff":1b}} run scoreboard players set @a[sort=random,limit=1,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 6
 execute if data storage datapack:server {mawSettings:{"Guesser":0b}} if score #maw EvilGuesser matches 0 run scoreboard players set @a[sort=random,limit=2,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
 execute if data storage datapack:server {mawSettings:{"Guesser":1b}} if score #maw EvilGuesser matches 0 if score #maw BothGuesser matches 0 run scoreboard players set @a[sort=random,limit=2,scores={CurrentRole=0},gamemode=!spectator] CurrentRole 1
@@ -63,21 +65,19 @@ execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} run
 execute if data storage datapack:server {mawSettings:{"Lovers":1b}} run scoreboard players set @a[scores={CurrentRole=1..,Lovers=0},sort=random,limit=1] Lovers 1
 execute if data storage datapack:server {mawSettings:{"Lovers":1b}} run scoreboard players set @a[scores={CurrentRole=1..,Lovers=0},sort=random,limit=1] Lovers 2
 
-execute if data storage datapack:server {mawSettings:{"Lawyer":1b}} run scoreboard players set #Neutrals mawSettings 1
-execute if data storage datapack:server {mawSettings:{"Arsonist":1b}} run scoreboard players set #Neutrals mawSettings 1
-execute if data storage datapack:server {mawSettings:{"Jester":1b}} run scoreboard players set #Neutrals mawSettings 1
-execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run scoreboard players set #Neutrals mawSettings 1
-execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} run scoreboard players set #Neutrals mawSettings 1
+execute if entity @a[scores={TeamWerewolf=0,TeamVillager=0}] run scoreboard players set #Neutrals mawSettings 1
 
 execute as @a[scores={TeamWerewolf=1}] run scoreboard players add #maw WolfCount 1
 execute as @a[scores={TeamVillager=1}] run scoreboard players add #maw VillageCount 1
 execute as @a[scores={TeamVillager=0,TeamWerewolf=0}] run scoreboard players add #maw VillageCount 1
+execute as @a[scores={TeamVillager=0,TeamWerewolf=0,CurrentRole=21}] run scoreboard players add #maw PsychopathCount 1
 
 execute as @a[scores={Lovers=1..}] run scoreboard players add #maw LoversCount 1
 execute if data storage datapack:server {mawSettings:{"Lovers":0b}} run scoreboard players add #maw LoversCount 0
 
 execute as @a[scores={TeamWerewolf=1,Lovers=1..}] run scoreboard players remove #maw WolfCount 1
 execute as @a[scores={TeamVillager=1,Lovers=1..}] run scoreboard players remove #maw VillageCount 1
+execute if score #maw PsychopathCount matches 1 run scoreboard players remove #maw VillageCount 1
 
 execute if data storage datapack:server {mawSettings:{"Arsonist":1b}} run scoreboard players remove #maw DouseCount 1
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run scoreboard players remove #maw InfectCount 1

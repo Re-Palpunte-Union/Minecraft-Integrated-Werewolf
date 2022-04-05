@@ -435,6 +435,24 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "maw:item/books/neutral/psychopath",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "CurrentRole": 21
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

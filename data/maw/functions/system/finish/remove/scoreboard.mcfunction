@@ -19,7 +19,7 @@ scoreboard objectives remove WerewolfBook
 scoreboard objectives remove UsedBow
 scoreboard objectives remove UsedLPotion
 scoreboard objectives remove RoleDone
-
+scoreboard objectives remove ReviveCount
 scoreboard objectives remove medium
 scoreboard objectives remove seer
 
@@ -63,6 +63,8 @@ scoreboard objectives remove Teleporter3
 scoreboard objectives remove LightsDown
 scoreboard objectives remove CoolDown
 scoreboard objectives remove enable
+#サイコパス
+scoreboard objectives remove PsychopathCount
 
 ## ランダムアイテム
 scoreboard objectives remove malgunarrow

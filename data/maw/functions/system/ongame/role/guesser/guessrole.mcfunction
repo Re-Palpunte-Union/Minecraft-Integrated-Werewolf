@@ -36,3 +36,5 @@ execute if data storage datapack:server {mawSettings:{"Jester":1b}} as @a[scores
 execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"ペスト医師だ！","color":"#ffc000","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 17"}}]}]
 
 execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"純愛者だ！","color":"#ffc000","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 20"}}]}]
+
+execute if data storage datapack:server {mawSettings:{"Psychopath":1b}} as @a[scores={CurrentRole=8,Guess=1..,DeathCount=0}] run tellraw @s [{"translate":"           %s","with":[{"text":"サイコパスだ！","color":"dark_purple","underlined":true,"bold":true,"clickEvent":{"action":"run_command","value":"/trigger GuessRole set 21"}}]}]

@@ -54,3 +54,6 @@ execute if data storage datapack:server {mawSettings:{"Trickster":0b}} if score 
 
 execute if data storage datapack:server {mawSettings:{"UnilateralLover":1b}} unless score 純愛者 PrevMAW matches -20 run scoreboard players set 純愛者 PrevMAW -20
 execute if data storage datapack:server {mawSettings:{"UnilateralLover":0b}} if score 純愛者 PrevMAW matches -20 run scoreboard players reset 純愛者 PrevMAW
+
+execute if data storage datapack:server {mawSettings:{"Psychopath":1b}} unless score サイコパス PrevMAW matches -21 run scoreboard players set サイコパス PrevMAW -21
+execute if data storage datapack:server {mawSettings:{"Psychopath":0b}} if score サイコパス PrevMAW matches -21 run scoreboard players reset サイコパス PrevMAW

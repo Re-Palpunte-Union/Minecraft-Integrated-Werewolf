@@ -17,3 +17,5 @@ tag @a[scores={CurrentRole=17}] add PlagueDoctor
 #純愛者
 tag @a[scores={CurrentRole=20}] add UnilateralLover
 tag @a[scores={CurrentRole=1..},tag=!UnilateralLover,limit=1,sort=random] add ToLoving
+#サイコパス
+tag @a[scores={CurrentRole=21}] add Psychopath

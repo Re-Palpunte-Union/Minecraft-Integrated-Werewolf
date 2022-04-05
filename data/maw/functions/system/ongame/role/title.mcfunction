@@ -49,3 +49,6 @@ title @s[scores={CurrentRole=19}] subtitle [{"text":"Use your jack-in-the-boxes 
 ## トリックスター
 title @s[scores={CurrentRole=20}] title {"text":"UNILATERAL LOVER","color":"#66ffa5","bold":true}
 title @s[scores={CurrentRole=20}] subtitle [{"text":"Lead your loved one to win","color":"#66ffa5","bold":true}]
+## サイコパス
+title @s[scores={CurrentRole=21}] title {"text":"PSYCHOPATH","color":"dark_purple","bold":true}
+title @s[scores={CurrentRole=21}] subtitle [{"text":"Kill everyone to win","color":"dark_purple","bold":true}]

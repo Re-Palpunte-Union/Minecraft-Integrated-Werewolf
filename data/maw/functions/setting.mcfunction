@@ -69,6 +69,9 @@ tellraw @s [{"text":"ペスト医師の有効化","color": "#ffc000","bold": fal
 tellraw @s [{"text":"純愛者の有効化","color": "#66ffa5","bold": false}]
  tellraw @s [{"text":"        "},{"text":"無効化","bold": true,"clickEvent": {"action": "run_command","value": "/execute if data storage datapack:server {mawSettings:{\"UnilateralLover\":1b}} run data modify storage datapack:server mawSettings merge value {\"UnilateralLover\":0b}"},"hoverEvent": {"action":"show_text","value":{"text":"クリックして「純愛者」を無効化"}}},{"text":"    "},{"text":"有効化","bold": true,"clickEvent": {"action": "run_command","value": "/execute if data storage datapack:server {mawSettings:{\"UnilateralLover\":0b}} run data modify storage datapack:server mawSettings merge value {\"UnilateralLover\":1b}"},"hoverEvent": {"action":"show_text","value":{"text":"クリックして「純愛者」を有効化"}}}]
 
+tellraw @s [{"text":"サイコパスの有効化","color": "dark_purple","bold": false}]
+ tellraw @s [{"text":"        "},{"text":"無効化","bold": true,"clickEvent": {"action": "run_command","value": "/execute if data storage datapack:server {mawSettings:{\"Psychopath\":1b}} run data modify storage datapack:server mawSettings merge value {\"Psychopath\":0b}"},"hoverEvent": {"action":"show_text","value":{"text":"クリックして「サイコパス」を無効化"}}},{"text":"    "},{"text":"有効化","bold": true,"clickEvent": {"action": "run_command","value": "/execute if data storage datapack:server {mawSettings:{\"Psychopath\":0b}} run data modify storage datapack:server mawSettings merge value {\"Psychopath\":1b}"},"hoverEvent": {"action":"show_text","value":{"text":"クリックして「サイコパス」を有効化"}}}]
+
 
 tellraw @s [{"text":"        ","strikethrough": true,"color": "gold"},{"text":"特殊役職詳細設定","strikethrough": false},{"text":"        ","strikethrough": true}]
 

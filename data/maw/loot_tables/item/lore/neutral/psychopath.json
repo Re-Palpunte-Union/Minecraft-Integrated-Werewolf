@@ -1,0 +1,35 @@
+{
+    "type": "generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:paper",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name":[
+                        [{"text":"サイコパス","bold": true,"color": "dark_purple","italic": false}]
+                    ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:-1,Enchantments:[{id:\"minecraft:vanishing_curse\",lvl:1}],HideFlags:1}"
+              },{
+                "function":"minecraft:set_lore",
+                "lore": [
+                  [{"text":"第三陣営","italic":false,"color":"dark_purple"}],
+                    [{"text":"人狼に殺されると殺した人狼を殺して生き返る","italic":false,"color":"white"}],
+                    [{"text":"占い師に占われると占い師を殺す","italic":false,"color":"yellow"}],
+                    [{"text":"霊媒師に霊媒されると死亡する","italic":false,"color":"red"}],
+                    [{"text":"自分以外を全員殺すと勝利","italic":false,"color":"white"}]
+                ]
+            }
+            ]
+          }
+        ]
+      }
+    ]
+  }
