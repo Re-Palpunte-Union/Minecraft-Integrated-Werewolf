@@ -65,6 +65,7 @@ scoreboard objectives add CoolDown dummy
 scoreboard objectives add enable dummy
 #サイコパス
 scoreboard objectives add PsychopathCount dummy
+scoreboard players set #maw PsychopathCount 0
 
 ## ランダムアイテム
 scoreboard objectives add malgunarrow minecraft.used:minecraft.crossbow
