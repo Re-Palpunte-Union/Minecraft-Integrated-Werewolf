@@ -11,7 +11,7 @@ effect give @a[scores={ReviveCount=1..}] resistance 1000000 4 true
 execute as @a[scores={ReviveCount=0}] run function maw:system/ongame/role/revive
 
 ### 死人
-execute as @a[scores={DeathCount=2..}] run function maw:system/ongame/main/dead_player
+execute if entity @a[scores={DeathCount=2..}] run function maw:system/ongame/main/dead_player
 
 ### 勝利判定
 function maw:system/ongame/main/check_winner
