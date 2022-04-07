@@ -1,0 +1,2 @@
+execute as @a[scores={Client=1,DeathCount=0},nbt=!{ActiveEffects:[{Id:14b}]}] at @s run particle dust 0.459 0.761 0.212 1 ~ ~2 ~ 0 0 0 0 5 force @s
+execute if score 依頼人が依頼されてることがわかる mawSettings matches 1 run execute at @a[scores={Client=1,DeathCount=0},nbt=!{ActiveEffects:[{Id:14b}]}] run particle dust 0.459 0.761 0.212 1 ~ ~2 ~ 0 0 0 0 5 force @a[scores={CurrentRole=9,DeathCount=0}]

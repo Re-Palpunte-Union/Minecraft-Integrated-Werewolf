@@ -1,3 +1,7 @@
+scoreboard players enable @a[scores={CurrentRole=8,RoleDone=0}] ShowTargets
+
+execute as @a[scores={CurrentRole=8,DeathCount=0,ShowTargets=1..}] run function maw:system/ongame/role/guesser/used
+
 scoreboard players enable @a[scores={CurrentRole=8,RoleDone=0,DeathCount=0}] Guess
 scoreboard players enable @a[scores={CurrentRole=8,RoleDone=0,DeathCount=0}] GuessRole
 

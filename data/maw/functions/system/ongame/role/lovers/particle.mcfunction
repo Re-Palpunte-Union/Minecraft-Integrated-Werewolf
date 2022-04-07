@@ -1,0 +1,2 @@
+execute at @a[scores={Lovers=1,DeathCount=0},nbt=!{ActiveEffects:[{Id:14b}]}] run particle dust 0.8 0 1 1 ~ ~2.3 ~ 0 0 0 0 5 force @a[scores={Lovers=2}]
+execute at @a[scores={Lovers=2,DeathCount=0},nbt=!{ActiveEffects:[{Id:14b}]}] run particle dust 0.8 0 1 1 ~ ~2.3 ~ 0 0 0 0 5 force @a[scores={Lovers=1}]

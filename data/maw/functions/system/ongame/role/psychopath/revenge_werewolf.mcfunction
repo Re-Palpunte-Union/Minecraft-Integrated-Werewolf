@@ -1,0 +1,6 @@
+execute if score #maw VillageCount matches 1.. if entity @s[scores={CurrentRole=21}] at @a[scores={KillCount=1..,TeamWerewolf=1}] run playsound item.trident.throw master @a ~ ~ ~ 1 1
+execute if score #maw VillageCount matches 1.. if entity @s[scores={CurrentRole=21}] at @a[scores={KillCount=1..,TeamWerewolf=1}] run particle sweep_attack ~ ~ ~ 1 1 1 1 100
+execute if score #maw VillageCount matches 1.. if entity @s[scores={CurrentRole=21}] at @a[scores={KillCount=1..,TeamWerewolf=1}] run particle squid_ink ~ ~ ~ 1 1 1 1 1000
+execute if score #maw VillageCount matches 1.. if entity @s[scores={CurrentRole=21}] as @a[scores={KillCount=1..,TeamWerewolf=1}] run kill @s
+execute if score #maw VillageCount matches 1.. if entity @a[scores={KillCount=1..,TeamWerewolf=1}] as @s[scores={CurrentRole=21}] run scoreboard players set @s ReviveCount 200
+execute if score #maw VillageCount matches 1.. if entity @a[scores={KillCount=1..,TeamWerewolf=1}] as @s[scores={CurrentRole=21}] run scoreboard players set @s DeathCount 0
