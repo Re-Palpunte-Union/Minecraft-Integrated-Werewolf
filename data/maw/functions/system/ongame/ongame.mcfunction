@@ -67,6 +67,7 @@ execute if data storage datapack:server {mawSettings:{"PlagueDoctor":1b}} run fu
 
 
 ### 死亡時の処理
+execute as @a[scores={DeathCount=1}] run function maw:system/ongame/role/psychopath/revenge_werewolf
 execute as @a[scores={DeathCount=1}] run function maw:system/ongame/main/when_dead
 
 function maw:system/ongame/item/main

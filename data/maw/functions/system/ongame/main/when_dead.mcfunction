@@ -1,5 +1,3 @@
-function maw:system/ongame/role/psychopath/revenge_werewolf
-
 execute if entity @s[scores={Lovers=1..}] as @a[scores={DeathCount=0,Lovers=1..}] run function maw:system/ongame/role/lovers/death
 
 execute if entity @s[tag=ToLoving] as @a[scores={DeathCount=0,CurrentRole=20},tag=UnilateralLover] run function maw:system/ongame/role/unilateral_lover/self_death
