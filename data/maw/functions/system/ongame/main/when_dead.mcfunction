@@ -17,7 +17,7 @@ execute if entity @s[scores={Client=1}] run function maw:system/ongame/role/lawy
 
 execute as @s[scores={TeamWerewolf=1,Lovers=0}] run scoreboard players remove #maw WolfCount 1
 execute as @s[scores={TeamVillager=1,Lovers=0}] run scoreboard players remove #maw VillageCount 1
-execute as @s[scores={TeamVillager=0,TeamWerewolf=0,Lovers=0}] run scoreboard players remove #maw VillageCount 1
+execute as @s[scores={TeamVillager=0,TeamWerewolf=0,Lovers=0},tag=!Psychopath] run scoreboard players remove #maw VillageCount 1
 execute as @s[scores={CurrentRole=21}] run scoreboard players remove #maw PsychopathCount 1
 execute as @s[scores={Lovers=1..}] run scoreboard players remove #maw LoversCount 1
 execute as @s[tag=!Douse] run scoreboard players remove #maw DouseCount 1

@@ -69,7 +69,7 @@ execute if entity @a[scores={TeamWerewolf=0,TeamVillager=0}] run scoreboard play
 
 execute as @a[scores={TeamWerewolf=1}] run scoreboard players add #maw WolfCount 1
 execute as @a[scores={TeamVillager=1}] run scoreboard players add #maw VillageCount 1
-execute as @a[scores={TeamVillager=0,TeamWerewolf=0}] run scoreboard players add #maw VillageCount 1
+execute as @a[scores={TeamWerewolf=0,TeamVillager=0}] run scoreboard players add #maw VillageCount 1
 execute as @a[scores={TeamVillager=0,TeamWerewolf=0,CurrentRole=21}] run scoreboard players add #maw PsychopathCount 1
 
 execute as @a[scores={Lovers=1..}] run scoreboard players add #maw LoversCount 1
